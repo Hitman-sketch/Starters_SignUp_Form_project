@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Form</title>
+  <style>
+    .form-container {
+      position: relative;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding-right: 350px;
+      margin-top: 70px;
+      background-color: rgb(72, 235, 235);
+    }
+    
+    .form-container img {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      left: 370px;
+      transform: translateY(-50%);
+    
+    }
+    
+    .form-container label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .form-container input[type="submit"] {
+      margin-top: 20px;
+      margin-left: 150px;
+      border-radius: 5px;
+    }
+    
+    .form-container input[type="text"],
+    .form-container input[type="password"],
+    .form-container input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    .form-container input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form>
+      <h1>SignUp</h1>
+      <p>Click here to <a href="#">login?</a></p>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <input type="submit" value="Submit">
+      <img src="./image/Add User-pana.svg" alt="Submit Button Image">
+    </form>
+  </div>
+</body>
+</html>
